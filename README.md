@@ -1,24 +1,2 @@
 # caesar-decoder
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Very simple caesar cipher brute-force decoder. Decoded text are ranked by alphabet frequency according to  [source](https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html).

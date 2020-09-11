@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="py-5">
+      <b-row>
+        <b-col>
+          <h1>Caesar Cipher Decoder</h1>
+          <hr>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <Decoder></Decoder>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <Footer></Footer>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Decoder from "@/components/Decoder";
+import Footer from "@/components/Footer";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Decoder,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
