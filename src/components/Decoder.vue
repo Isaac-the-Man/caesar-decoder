@@ -5,7 +5,7 @@
         <b-form-input v-model="cipher"></b-form-input>
       </b-input-group>
     </b-form>
-    <div class="mt-3">
+    <div v-if="cipher.length > 0"  class="mt-3">
       <b-card class="shadow mt-1" v-for="(decoded, i) in decodedRankedListShow" :key="i">
         <b-row no-gutters>
           <b-col md="1">
@@ -17,7 +17,7 @@
         </b-row>
       </b-card>
     </div>
-    <div class="mt-3 d-flex justify-content-center">
+    <div v-if="cipher.length > 0" class="mt-3 d-flex justify-content-center">
       <b-button v-if="cipher.length > 0" variant="primary" @click="showAll = !showAll">{{ showAll ? 'Show Less' : 'Show All' }}</b-button>
     </div>
   </div>
